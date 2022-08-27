@@ -1,0 +1,408 @@
+/* Resest CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Common */
+
+.white-text{
+    color: #fff !important;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{
+    float: left;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.col-third{
+    width: 33.3333%;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.mt-32{
+    margin-top: 32px !important;
+}
+
+
+
+
+
+/* Main */
+#main{}
+
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    /* overflow: hidden; */
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav > li{
+    display: inline-block;
+    position: relative;
+}
+
+#nav > li > a{
+    color: #fff;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 5px #ccc;
+    min-width: 160px;
+}
+
+#nav .subnav li{
+    width: 100%;
+    list-style: none;
+}
+
+#nav .subnav a{
+    color: #000;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn{
+    float: right;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#header .menu-icon,
+#header .search-icon{
+    font-size: 1.2rem;
+    line-height: 46px;
+    padding: 0 24px;
+    color: #fff;
+}
+
+
+#header .search-btn:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background-image: url('../img/slider/chicago.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+#slider .text-header{
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+#slider .text-content{
+    position: absolute;
+    bottom: 46px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#slider .text-desc{
+    margin-top: 25px;
+    font-size: 15px;
+    text-shadow: 0 0 1.5px #000;
+}
+
+/* #content{} */
+
+#content .section-about{
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 64px 0 112px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#content .section-heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+#content .section-sub-heading{
+    text-align: center;
+    font-size: 15px;
+    margin: 24px 0;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+#content .about-text{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#content .member-item{
+    text-align: center;
+}
+
+#content .members-list{
+    margin-top: 48px;
+    overflow: hidden;
+}
+
+#content .member-name{
+    font-size: 15px;
+}
+
+#content .member-img{
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 5px;
+}
+
+/* Tour Section */
+#content .tour-section{
+    background-color: #000;
+}
+
+#content .ticket-list{
+    background-color: #fff;
+}
+
+#content .ticket-list li{
+    padding: 12px 10px;
+    border-bottom: 1px solid #ddd;
+    color: rgb(106, 105, 105);
+    list-style: none;
+}
+
+#content .sold-out{
+    background-color: rgb(227, 55, 55);
+    color: #fff;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+#content .quantity{
+    float: right;
+    background-color: #000;
+    color: #fff;
+    padding: 4px 9px;
+    margin-top: -3px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+
+/* Place Section */
+#content .place-list{
+    margin-top: 32px;
+    overflow: hidden;
+}
+
+#content .place-img{
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover{
+    opacity: 0.8;
+}
+
+#content .place-content{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+#content .place-heading{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-time{
+    margin-top: 15px;
+    opacity: 0.7;
+}
+
+.place-description{
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.buy-ticket-btn{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 16px;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.buy-ticket-btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+/* Contact Form */
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-info{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-info a{
+    opacity: 0.8;
+}
+
+.contact-info a:hover{
+    opacity: 1;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .form-submit-btn{
+    font-size: 15px;
+    color: #fff;
+    background-color: #000;
+    border:none;
+    padding: 10px 16px;
+    float: right;
+    cursor: pointer;
+}
+
+.form-submit-btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+/* Map section */
+.map-section img{
+    width: 100%;
+}
+
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+} 
+
+#footer .social-list{
+    font-size: 24px;
+}
+
+#footer .social-list a{
+    color: rgb(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+.copyright a:hover,
+#footer .social-list a:hover{
+    color: rgb(0, 0, 0, 0.4);
+}
+
+.copyright{
+    margin-top: 15px;
+    color: rgb(0, 0, 0, 0.6);
+}
+
+.copyright a{
+    color: rgb(0, 0, 0, 0.6);
+}
+
+
